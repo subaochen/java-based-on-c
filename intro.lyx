@@ -286,7 +286,17 @@ status open
 \end_layout
 
 \begin_layout Standard
-此后的10年、20年，Java的霸主地位会动摇吗？who knows？但是，当下掌握Java、学好Java是IT职业生涯的不二敲门砖。
+此后的10年、20年，Java的霸主地位会动摇吗？根据ruby之父松本行弘的自述，ruby从开始开发到发布用了3年左右的时间，在到了在程序员圈子中拥有一定的知名
+度则又花了4年的时间，再到通过Ruby on Rails而走红，则有花了5年的时间
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p109"
+key "code-future"
+
+\end_inset
+
+。可见，程序设计语言的发展和进化是相对缓慢的一个过程，因此可以推断，至少未来10年的时间，Java和C仍然会是主流的程序设计语言。who knows？但是，当下
+掌握Java、学好Java是IT职业生涯的不二敲门砖。
 \end_layout
 
 \begin_layout Section

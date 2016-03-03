@@ -220,5 +220,16 @@ options "IEEEtranN"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/subaochen/git/bibref/others"
+options "IEEEtranN"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
