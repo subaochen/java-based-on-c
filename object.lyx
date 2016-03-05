@@ -198,5 +198,16 @@ C的struct
 为什么需要控制对象的访问？
 \end_layout
 
+\begin_layout Subsection
+类变量和类方法
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:类变量和类方法"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
