@@ -180,6 +180,16 @@ coderemarks
 
 \begin_layout Chapter
 数据类型和运算符
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+附录增加一个quick reference card
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -521,10 +531,6 @@ Java和C语言共同的数据类型
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -556,12 +562,24 @@ lstparams "caption={Java和C语言相同的数据类型示例},label={Java和C�
 Java中增加的数据类型
 \end_layout
 
+\begin_layout Standard
+boolean（C中是bool）
+\end_layout
+
 \begin_layout Section
 和C语言相同的运算符
 \end_layout
 
+\begin_layout Standard
+列表
+\end_layout
+
 \begin_layout Section
 Java中增加的运算符
+\end_layout
+
+\begin_layout Standard
+new，instanceof，举例说明，增加后续章节或者解释的交叉引用。
 \end_layout
 
 \end_body

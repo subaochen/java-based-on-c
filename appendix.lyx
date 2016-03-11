@@ -68,10 +68,14 @@
         escapechar=|
 } 
 
+
 \usepackage{tikz}
 \usepackage{ifthen}
-\usepackage{coderemarks}
 \usepackage{alltt}
+% Optional PGF libraries
+\usepackage{pgflibraryarrows}
+\usepackage{pgflibrarysnakes}
+
 %% Style commands
 \newcommand{\func}[1]{\texttt{#1}}
 \newcommand{\key}[1]{\texttt{#1}}
@@ -103,9 +107,10 @@
 \end_preamble
 \use_default_options true
 \begin_modules
+logicalmkup
 multicol
 notice
-logicalmkup
+coderemarks
 \end_modules
 \maintain_unincluded_children false
 \language chinese-simplified
@@ -129,16 +134,7 @@ logicalmkup
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref true
-\pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
-\pdf_pdfborder true
-\pdf_colorlinks false
-\pdf_backref false
-\pdf_pdfusetitle true
+\use_hyperref false
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -182,17 +178,59 @@ logicalmkup
 
 \begin_body
 
-\begin_layout Title
-C语言基础学习Java
+\begin_layout Chapter
+\start_of_appendix
+建议的授课计划
 \end_layout
 
-\begin_layout Author
-宿宝臣<subaochen@126.com>
+\begin_layout Chapter
+练习和思考题参考答案
+\end_layout
+
+\begin_layout Chapter
+Java生态图
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/after-java.svg
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Java起步，前途光明
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc
-LatexCommand tableofcontents
+LatexCommand lstlistoflistings
 
 \end_inset
 
@@ -200,36 +238,9 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-前言部分
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "frontmatter.tex"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part
-入门
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-建立一个怎样的教学模型？类似于Mehran Sahami的karel如何？游戏，有趣，富有变化是重点。
-\end_layout
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
 
 \end_inset
 
@@ -237,9 +248,10 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "intro.lyx"
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/subaochen/git/bibref/java"
+options "IEEEtranN"
 
 \end_inset
 
@@ -247,47 +259,10 @@ filename "intro.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "data-type.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "object.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "package.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part
-提高
-\end_layout
-
-\begin_layout Standard
-Java社区：JSR/JSP
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "appendix.lyx"
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/subaochen/git/bibref/others"
+options "IEEEtranN"
 
 \end_inset
 
