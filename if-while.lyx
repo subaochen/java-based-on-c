@@ -250,6 +250,14 @@ status open
 用，良好的变量命名对理解程序有多么大的帮助！
 \end_layout
 
+\begin_layout Plain Layout
+这里也花些篇幅说明程序设计的几种方法：瀑布式等。
+\end_layout
+
+\begin_layout Plain Layout
+演示程序是如何写出来的？分几个步骤一步一步写出完整的程序来。
+\end_layout
+
 \end_inset
 
 
@@ -307,6 +315,19 @@ name "fig:打印指定年份月历程序分析"
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UML的方式画序列图表示呢？也许比思维导图效果好？
 \end_layout
 
 \end_inset
