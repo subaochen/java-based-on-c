@@ -335,5 +335,130 @@ UML的方式画序列图表示呢？也许比思维导图效果好？
 
 \end_layout
 
+\begin_layout Standard
+首先，搭建一个应用程序的框架，也就是粗线条的描述应用程序的功能，如代码清单
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:第一步：粗线条的描述应用程序的功能"
+
+\end_inset
+
+所示：
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+第一步：粗线条的描述应用程序的功能
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:第一步：粗线条的描述应用程序的功能"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class MyCalendar {
+\end_layout
+
+\begin_layout Plain Layout
+
+    public static void main(String[] args) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        int year = inputYear();
+\end_layout
+
+\begin_layout Plain Layout
+
+        displayCalendar(year);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    private static int inputYear() { // |
+\backslash
+longremark{先使用空的方法即可}|
+\end_layout
+
+\begin_layout Plain Layout
+
+        return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    private static void displayCalendar(int year) {// |
+\backslash
+longremark{先使用空的方法即可}|
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+// |
+\backslash
+showremarks|
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
