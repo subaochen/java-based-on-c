@@ -110,7 +110,6 @@
 logicalmkup
 multicol
 notice
-coderemarks
 \end_modules
 \maintain_unincluded_children false
 \language chinese-simplified
@@ -183,19 +182,392 @@ coderemarks
 \end_layout
 
 \begin_layout Section
-C的struct
+再说C语言的struct
+\end_layout
+
+\begin_layout Subsection
+struct的起源
+\end_layout
+
+\begin_layout Standard
+struct是扩充了C语言的数据类型。
+\end_layout
+
+\begin_layout Standard
+struct是俯瞰数据，简单的数据类型是在仰视数据。
+\end_layout
+
+\begin_layout Subsection
+struct的局限性
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:struct的局限性"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+通过例子说明，操作成员分量的安全性无法保证。
 \end_layout
 
 \begin_layout Section
-类的演化
+类的概念是struct的延续
+\end_layout
+
+\begin_layout Standard
+正如
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:struct的局限性"
+
+\end_inset
+
+所述，struct还是有不小的局限性的，于是有了类的概念。
+\end_layout
+
+\begin_layout Subsection
+类更好的保护了成员分量：private/protected
+\end_layout
+
+\begin_layout Subsection
+类把成员分量和操作成员分量的函数更紧密的组织在一起
+\end_layout
+
+\begin_layout Subsection
+类中的基本概念
+\end_layout
+
+\begin_layout Standard
+通过定义类，扩充了Java的数据类型，也就是说，类就是数据类型，或者相对简单数据类型而言，类就是复合的数据类型。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+举例说明：什么样的例子鲜明生动？
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+属性
+\end_layout
+
+\begin_layout Subsubsection
+方法
 \end_layout
 
 \begin_layout Section
 对象是什么？
 \end_layout
 
+\begin_layout Standard
+既然类就是数据类型，那么我们就可以使用类来定义变量了，比如：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Animal dog;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中Animal是类，dog是Animal类型的变量，在面向对象的语言中，通常把dog称为一个“对象”，即Animal类型的一个实例。可以定义若干这种类型的变量
+，也就是说，一个类可以创建若干实例（对象）。这是容易理解的，因为类是一个抽象的概念，是对一类事物共同属性的抽象描述，具体到不同的这类事物的个体，属性自然各不相同
+，就形成了不同的“实例”或者“对象”。
+\end_layout
+
 \begin_layout Section
 为什么需要控制对象的访问？
+\end_layout
+
+\begin_layout Standard
+Java提供了完善的访问控制策略来保护属性和方法，如表所示
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+也参见：http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+\end_layout
+
+\end_inset
+
+：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+修饰词
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Package
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Subclass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+world
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+public
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+protected
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+default
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+private
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+√
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
