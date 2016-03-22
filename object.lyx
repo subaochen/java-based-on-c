@@ -301,6 +301,14 @@ Animal dog;
 ，就形成了不同的“实例”或者“对象”。
 \end_layout
 
+\begin_layout Subsection
+构造方法
+\end_layout
+
+\begin_layout Standard
+根据类（类型）创建相应的对象（变量），在简单变量这个层面上很简单
+\end_layout
+
 \begin_layout Section
 为什么需要控制对象的访问？
 \end_layout
