@@ -68,9 +68,14 @@
         escapechar=|
 } 
 
+
 \usepackage{tikz}
 \usepackage{ifthen}
 \usepackage{alltt}
+% Optional PGF libraries
+\usepackage{pgflibraryarrows}
+\usepackage{pgflibrarysnakes}
+
 %% Style commands
 \newcommand{\func}[1]{\texttt{#1}}
 \newcommand{\key}[1]{\texttt{#1}}
@@ -101,11 +106,6 @@
 \newcommand{\coderemark}[1]{\sffamily\normalfont\qquad$\leftarrow \textit{\footnotesize #1}$}
 \end_preamble
 \use_default_options true
-\begin_modules
-coderemarks
-logicalmkup
-multicol
-\end_modules
 \maintain_unincluded_children false
 \language chinese-simplified
 \language_package default
@@ -128,16 +128,7 @@ multicol
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref true
-\pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
-\pdf_pdfborder true
-\pdf_colorlinks false
-\pdf_backref false
-\pdf_pdfusetitle true
+\use_hyperref false
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -181,167 +172,24 @@ multicol
 
 \begin_body
 
-\begin_layout Title
-C语言基础的Java实用教程
+\begin_layout Chapter
+集合类
 \end_layout
 
-\begin_layout Author
-宿宝臣<subaochen@126.com>
+\begin_layout Section
+集合的概念和表达
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
+\begin_layout Section
+Java的集合类
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-前言部分
+\begin_layout Section
+集合类应用实例
 \end_layout
 
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "frontmatter.tex"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-建立一个怎样的教学模型？类似于Mehran Sahami的karel如何？游戏，有趣，富有变化是重点。
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "intro.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "data-type.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "object.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "package.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "exception.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "io.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "data-set.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "gui.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "community.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Java社区：JSR/JSP，这部分内容要涉及吗？
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "appendix.lyx"
-
-\end_inset
-
-
+\begin_layout Section
+集合类的一般实用原则和注意事项
 \end_layout
 
 \end_body

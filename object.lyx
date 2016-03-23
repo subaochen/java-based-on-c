@@ -106,11 +106,6 @@
 \newcommand{\coderemark}[1]{\sffamily\normalfont\qquad$\leftarrow \textit{\footnotesize #1}$}
 \end_preamble
 \use_default_options true
-\begin_modules
-logicalmkup
-multicol
-notice
-\end_modules
 \maintain_unincluded_children false
 \language chinese-simplified
 \language_package default
