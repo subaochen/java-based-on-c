@@ -184,6 +184,25 @@
 Java的集合类
 \end_layout
 
+\begin_layout Subsection
+Iterator
+\end_layout
+
+\begin_layout Standard
+不同的集合有不同的遍历方式，比如对于二叉树而言，有前序、中序、后序三种遍历方式，而链表的遍历就简单的多
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+是否增加图形的方式展示不同的集合的不同遍历方式？
+\end_layout
+
+\end_inset
+
+。在Java的集合框架中，Collection设计了Iterator接口，要求Java的集合类必须实现一个Iterator接口，即如何遍历集合：不重不漏的检索一
+遍集合的所有元素。虽然不同的集合有不同的遍历元素的方式，但是只要通过Iterator接口，我们就可以保证逐个找到这个集合的所有元素。
+\end_layout
+
 \begin_layout Section
 集合类应用实例
 \end_layout
