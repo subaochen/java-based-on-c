@@ -180,8 +180,16 @@ Java的IO
 C的IO回顾
 \end_layout
 
+\begin_layout Standard
+流式IO（字节流和字符流）的形象表达和C语言表达，一切都是设备
+\end_layout
+
 \begin_layout Section
 Java的IO体系
+\end_layout
+
+\begin_layout Standard
+Java IO对流式设备的进一步完善（装饰模式）
 \end_layout
 
 \begin_layout Section
