@@ -128,6 +128,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement tbph
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -180,6 +181,10 @@ Java入门
 
 \begin_layout Section
 Java简史
+\end_layout
+
+\begin_layout Standard
+鱼骨图画出java的发展历史
 \begin_inset CommandInset citation
 LatexCommand cite
 key "java-brief-history"
@@ -187,10 +192,6 @@ key "java-brief-history"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-鱼骨图画出java的发展历史
 \end_layout
 
 \begin_layout Standard
