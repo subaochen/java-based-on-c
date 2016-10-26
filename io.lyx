@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass ctex-book
 \begin_preamble
 %%%%%%%%%%%%%%%%%%                                                                                                                                                           
@@ -111,21 +113,22 @@
 \language_package default
 \inputencoding utf8-plain
 \fontencoding global
-\font_roman 新宋体
-\font_sans 新宋体
-\font_typewriter 新宋体
-\font_math auto
+\font_roman "default" "新宋体"
+\font_sans "default" "新宋体"
+\font_typewriter "default" "新宋体"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format pdf4
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement tbph
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -176,6 +179,44 @@
 Java的IO
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement tbph
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/java-IO.pdf
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Java IO知识点
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 C的IO回顾
 \end_layout
@@ -198,6 +239,10 @@ Java IO和装饰模式
 
 \begin_layout Section
 Java IO的一般使用原则
+\end_layout
+
+\begin_layout Section*
+习题
 \end_layout
 
 \end_body
